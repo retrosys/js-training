@@ -21,9 +21,7 @@ const multiply = (num1, num2) => {
   return num1 * multiply (num1 + 1, num2)
 }
 
-
-
-* Begin of tests
+/* Begin of tests */
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')
