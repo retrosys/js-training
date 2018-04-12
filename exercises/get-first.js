@@ -9,6 +9,16 @@
 
 // Your code :
 
+const getFirst = (array) => {
+	return array[0] 
+}
+
+
+
+
+
+getFirst([42, 3])
+
 //* Begin of tests
 const assert = require('assert')
 

@@ -8,6 +8,15 @@
 
 // Your code :
 
+const id = (pouet) => {
+	return pouet
+}
+
+
+
+
+
+
 //* Begin of tests
 const assert = require('assert')
 

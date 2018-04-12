@@ -8,6 +8,24 @@
  *
  */
 
+ const repeat = (str, num) => {
+ 	if(num < 0){
+    	return ''
+ 	}
+ 	else if (num === 0){
+ 		return ''
+ 	}
+    else if(num === 1){
+    	return str
+    }
+    else {
+    	return str + repeat(str, num - 1)
+	}
+}
+
+
+
+
 //* Begin of tests
 const assert = require('assert')
 

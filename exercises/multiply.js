@@ -10,6 +10,18 @@
 
 // Your code :
 
+const multiply = (num1, num2) => {
+	let subTotal = 0
+	if (num1 < 0) {
+		num2 = -num2 
+		num1 = -num1
+	}
+	for (let i = 0; i < num1; i++) {
+		subTotal += num2 
+	}
+	return subTotal
+
+}
 //* Begin of tests
 const assert = require('assert')
 

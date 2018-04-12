@@ -11,7 +11,19 @@
 
 // Your code :
 
-//* Begin of tests
+const multiply = (num1, num2) => {
+  if (isNaN(num1) || isNaN(num2)) return NaN;
+  if (num1 === 0 || num2 === 0) return 0;
+  if (num1 === num2) return 1;
+  if (num2 < num1) {
+    return 0;
+  }
+  return num1 * multiply (num1 + 1, num2)
+}
+
+
+
+* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')

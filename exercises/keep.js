@@ -12,9 +12,27 @@
  *
  */
 
+const keepFirst = string1 => {
+	return string1.slice(0, 2)
+}
+
+const keepLast = string2 => {
+	return string2.slice(5, string2.length)
+}
+
+const keepFirstLast = string3 => {
+	return string3.slice(2, 4)
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof keepFirst, 'function')
+assert.strictEqual(typeof keepLast, 'function')
+assert.strictEqual(typeof keepFirstLast, 'function')
+assert.deepStrictEqual(keepFirst('string1'),('st'))
+assert.deepStrictEqual(keepLast('string2'),('g2'))
+assert.deepStrictEqual(keepFirstLast('string3'),('ri'))
+
+//assert.fail('You must write your own tests')
 // End of tests */

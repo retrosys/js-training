@@ -6,6 +6,11 @@
  *
  */
 
+ const sentence = (array) => {
+ 	['yoga', 'kung-fu', 'karaté']
+ 	return (array.join(' '))
+}
+
 
 //* Begin of tests
 const assert = require('assert')

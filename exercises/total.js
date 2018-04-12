@@ -7,6 +7,16 @@
  */
 
 
+let total = input => {
+	let test = 0
+    for(let i=0; i < input.length; i++) {
+    test += input[i]
+	}
+    return test
+}
+
+
+
 //* Begin of tests
 const assert = require('assert')
 

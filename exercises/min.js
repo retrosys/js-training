@@ -11,6 +11,17 @@
 
 // Your code :
 
+// const min = (num1, num2) => { (num1 < num2) ? num1 : num2 }
+
+const min = (num1, num2) => {
+	if (num1 < num2){
+		return num1
+	}
+	else if (num1 > num2){
+		return num2
+	}
+}
+
 //* Begin of tests
 const assert = require('assert')
 

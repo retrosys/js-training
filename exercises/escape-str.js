@@ -9,6 +9,8 @@
 
 // Your code :
 
+const escapeStr = 'C\'est la \"Wild\" `Code School`/\\'
+
 //* Begin of tests
 const assert = require('assert')
 
